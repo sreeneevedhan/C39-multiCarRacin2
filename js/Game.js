@@ -70,7 +70,8 @@ class Game {
         cars[index-1].y = y;
 
         if (index === player.index){
-          cars[index - 1].shapeColor = "red";
+          fill("red");
+          ellipse(x,y,60,60);  
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].y;
         }
